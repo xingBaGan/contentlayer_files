@@ -8,6 +8,32 @@ export { isType } from 'contentlayer/client'
 export type { Markdown, MDX, ImageFieldData, IsoDateTimeString }
 
 /** Document types */
+export type Article = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'Article'
+  title?: string | undefined
+  date?: IsoDateTimeString | undefined
+  tags: string[]
+  lastmod?: IsoDateTimeString | undefined
+  draft?: boolean | undefined
+  summary?: string | undefined
+  images?: any | undefined
+  authors?: string[] | undefined
+  layout?: string | undefined
+  bibliography?: string | undefined
+  canonicalUrl?: string | undefined
+  /** MDX file body */
+  body: MDX
+  readingTime: json
+  slug: string
+  path: string
+  filePath: string
+  toc: string
+  structuredData: json
+}
+
 export type Authors = {
   /** File path relative to `contentDirPath` */
   _id: string
@@ -31,13 +57,13 @@ export type Authors = {
   toc: string
 }
 
-export type Blog = {
+export type Post = {
   /** File path relative to `contentDirPath` */
   _id: string
   _raw: Local.RawDocumentData
-  type: 'Blog'
-  title: string
-  date: IsoDateTimeString
+  type: 'Post'
+  title?: string | undefined
+  date?: IsoDateTimeString | undefined
   tags: string[]
   lastmod?: IsoDateTimeString | undefined
   draft?: boolean | undefined
@@ -47,8 +73,8 @@ export type Blog = {
   layout?: string | undefined
   bibliography?: string | undefined
   canonicalUrl?: string | undefined
-  /** MDX file body */
-  body: MDX
+  /** Markdown file body */
+  body: Markdown
   readingTime: json
   slug: string
   path: string
@@ -65,15 +91,16 @@ export type Blog = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Authors | Blog
-export type DocumentTypeNames = 'Authors' | 'Blog'
+export type DocumentTypes = Article | Authors | Post
+export type DocumentTypeNames = 'Article' | 'Authors' | 'Post'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
 
 export type DataExports = {
   allDocuments: DocumentTypes[]
-  allBlogs: Blog[]
+  allPosts: Post[]
+  allArticles: Article[]
   allAuthors: Authors[]
 }
 
@@ -94,8 +121,9 @@ declare global {
 }
 
 export type DocumentTypeMap = {
+  Article: Article
   Authors: Authors
-  Blog: Blog
+  Post: Post
 }
 
 export type NestedTypeMap = {

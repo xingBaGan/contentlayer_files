@@ -1,0 +1,39 @@
+{
+  "tags": [],
+  "draft": true,
+  "body": {
+    "raw": "\n## 如何启动项目\n\t\n[运行 CMD 脚本](D:\\code_workspace\\xmind-obsidian\\xmind-obsidian\\.obsidian\\plugins\\contentlayer-builder\\start.bat)\n\n[停止 CMD 脚本](D:\\code_workspace\\xmind-obsidian\\xmind-obsidian\\.obsidian\\plugins\\contentlayer-builder\\stop.bat)",
+    "html": "<h2>如何启动项目</h2>\n<p><a href=\"D:%5Ccode_workspace%5Cxmind-obsidian%5Cxmind-obsidian.obsidian%5Cplugins%5Ccontentlayer-builder%5Cstart.bat\">运行 CMD 脚本</a></p>\n<p><a href=\"D:%5Ccode_workspace%5Cxmind-obsidian%5Cxmind-obsidian.obsidian%5Cplugins%5Ccontentlayer-builder%5Cstop.bat\">停止 CMD 脚本</a></p>"
+  },
+  "_id": "contentlayer_guidence.md",
+  "_raw": {
+    "sourceFilePath": "contentlayer_guidence.md",
+    "sourceFileName": "contentlayer_guidence.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "contentlayer_guidence"
+  },
+  "type": "Post",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.1,
+    "time": 6000,
+    "words": 20
+  },
+  "slug": "contentlayer_guidence",
+  "path": "contentlayer_guidence",
+  "filePath": "contentlayer_guidence.md",
+  "toc": [
+    {
+      "value": "如何启动项目",
+      "url": "#如何启动项目",
+      "depth": 2
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://tailwind-nextjs-starter-blog.vercel.app/contentlayer_guidence"
+  }
+}
