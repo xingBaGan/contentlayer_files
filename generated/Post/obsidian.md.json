@@ -1,0 +1,38 @@
+{
+  "tags": [],
+  "body": {
+    "raw": "\n### 图床配置\n[PicGo is Here | PicGo](https://picgo.github.io/PicGo-Doc/zh/guide/#picgo-is-here)\n\n",
+    "html": "<h3>图床配置</h3>\n<p><a href=\"https://picgo.github.io/PicGo-Doc/zh/guide/#picgo-is-here\">PicGo is Here | PicGo</a></p>"
+  },
+  "_id": "obsidian.md",
+  "_raw": {
+    "sourceFilePath": "obsidian.md",
+    "sourceFileName": "obsidian.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "obsidian"
+  },
+  "type": "Post",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.05,
+    "time": 3000,
+    "words": 10
+  },
+  "slug": "obsidian",
+  "path": "obsidian",
+  "filePath": "obsidian.md",
+  "toc": [
+    {
+      "value": "图床配置",
+      "url": "#图床配置",
+      "depth": 3
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://tailwind-nextjs-starter-blog.vercel.app/obsidian"
+  }
+}
